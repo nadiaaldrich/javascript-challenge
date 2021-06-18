@@ -1,3 +1,6 @@
+![github](https://img.shields.io/github/contributors/nadiaaldrich/javascript-challenge?color=green&style=for-the-badge)
+![github](https://img.shields.io/github/languages/code-size/nadiaaldrich/javascript-challenge?style=for-the-badge)
+
 ## UFO Sightings
 
 ### Before You Begin
