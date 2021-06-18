@@ -5,22 +5,23 @@ const tableData = data;
 const tbody = d3.select("tbody");
 
 function buildTable(data) {
+    // Clear out any existing data
     tbody.html("");
+  
+    // Loop through each object in the data and append
+    data.forEach((dataRow) => {
+      // Append a row to the table body
+      const row = tbody.append("tr");
+  
+      // Loop through each field in the dataRow and add value in cell
 
-
-    // loop through data and append rows and cells
-    data.forEach(dataRow) => {
-        const row = tbody.append("tr");
-
-        // loop through each field in the dataRow and add value as cell
-        Object.values(dataRow).forEach((val) => {
-            let cell = row.append("td");
-                cell.text(val);
-            }
-        );
-
-    }
-}
+      Object.values(dataRow).forEach((val) => {
+        let cell = row.append("td");
+          cell.text(val);
+        }
+      );
+    });
+  }
 
 function handleClick() {
 
