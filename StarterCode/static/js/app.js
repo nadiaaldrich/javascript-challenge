@@ -1,5 +1,5 @@
 // from data.js
-var tableData = data;
+const tableData = data;
 
 // get table using d3
 const tbody = d3.select("tbody");
@@ -13,14 +13,14 @@ function buildTable(data) {
         const row = tbody.append("tr");
 
         // loop through each field in the dataRow and add value as cell
-        Object.values(dataRow).forEach((val)) => {
+        Object.values(dataRow).forEach((val) => {
             let cell = row.append("td");
                 cell.text(val);
             }
         );
 
-    });
-}  
+    }
+}
 
 function handleClick() {
 
@@ -35,6 +35,6 @@ function handleClick() {
     }
 }
 
-d3.selectAll("#fileter-btn").on("click", handleClick);
+d3.selectAll("#filter-btn").on("click", handleClick);
 
 buildTable(tableData);
