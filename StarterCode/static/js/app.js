@@ -19,4 +19,5 @@ function buildTable(data) {
             }
         );
 
-    
+    });
+}  
